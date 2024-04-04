@@ -20,11 +20,11 @@ switch (true){
         nivelHeroi = "Ferro"
     break
 
-    case xpHeroi >= 1000 && xpHeroi < 2000:
+    case xpHeroi >= 1001 && xpHeroi < 2000:
         nivelHeroi = "Bronze"
     break
     
-    case xpHeroi >= 2001 && xpHeroi < 5001:
+    case xpHeroi >= 2001 && xpHeroi < 5000:
         nivelHeroi = "Prata"
     break
 
