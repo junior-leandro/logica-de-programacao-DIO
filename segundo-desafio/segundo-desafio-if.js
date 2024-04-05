@@ -3,36 +3,27 @@ let saldoVitorias = gerarSaldoDeVitorias()
 
 
 // condicional
-// Switch Case que ja chama a função caso seja verdadeiro
 
-switch (true){
-    case saldoVitorias[2] < 10:
-        exibeResultado(saldoVitorias, "Ferro")
-    break
-
-    case saldoVitorias[2] >= 11 && saldoVitorias[2] < 20:
-        exibeResultado(saldoVitorias, "Bronze")
-    break
-    
-    case saldoVitorias[2] >= 21 && saldoVitorias[2] < 5:
-        exibeResultado(saldoVitorias, "Prata")
-    break
-
-    case saldoVitorias[2] >= 51 && saldoVitorias[2] < 80:
-        exibeResultado(saldoVitorias, "Ouro")
-    break
-
-    case saldoVitorias[2] >= 81 && saldoVitorias[2] < 90:
-        exibeResultado(saldoVitorias, "Diamante")
-    break
-
-    case saldoVitorias[2] >= 91 && saldoVitorias[2] < 100:
-        exibeResultado(saldoVitorias, "Lendário")
-    break
-
-    case saldoVitorias[2] >= 101:
-        exibeResultado(saldoVitorias, "Imortal")
-    break
+if (saldoVitorias[2] <=10){
+    exibeResultado(saldoVitorias, "Ferro")
+}
+else if(saldoVitorias[2] >= 11 && saldoVitorias[2] <= 20){ 
+    exibeResultado(saldoVitorias, "Bronze")
+}
+else if(saldoVitorias[2] >= 21 && saldoVitorias[2] <= 50){ 
+    exibeResultado(saldoVitorias, "Prata")
+}
+else if(saldoVitorias[2] >= 51 && saldoVitorias[2] <= 80){ 
+    exibeResultado(saldoVitorias, "Ouro")
+}
+else if(saldoVitorias[2] >= 81 && saldoVitorias[2] <= 90){ 
+    exibeResultado(saldoVitorias, "Diamante")
+}
+else if(saldoVitorias[2] >= 91 && saldoVitorias[2] <= 100){
+    exibeResultado(saldoVitorias, "Lendário")
+}
+else {
+    exibeResultado(saldoVitorias, "Imortal")
 }
 
 // função que gera a pontuação do heróis
